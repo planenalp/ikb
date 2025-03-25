@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="en">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
-    
-    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+    <link href='https://international.klein.blue/assets/primer.css' rel='stylesheet' />
+    <script src='https://international.klein.blue/assets/Theme-IKB.js'></script>
+    <link rel="icon" href="https://international.klein.blue/logo/favicon.svg"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
@@ -16,91 +16,7 @@
 
 原视频教程出处
 Live Blogger - 《How To Customize BG Image In Blogger Contempo Theme | Theme Editor》
-[https://www.youtube.com/watch?v=zMB0XeMcRZg&ab_channel=LiveBlogger](https://www.blogger.com/blog/post/edit/8151877248081093597/8992707372004594223#)
-
-因为 Blogger 默认顶栏只能设置添加图片，不能单独自定义颜色，klein.blue 的顶栏的风格只需要颜色不需要图像，之前就是曲线救国做了一张蓝色纯色图上传上去，正常来说没什么问题，但是国内直连所有图片都没法正确加载导致顶栏变成了当前主题默认的深灰色，所以就想研究怎么通过修改 CSS 代码之类将这个默认的深灰色像其余模块那样可以自定义为 #002FA7，问题很小众找了半天终于在 YouTube 搜到1个视频教程
-这样即使加载不了图片也还能显示出网站的背景颜色了
-
-# 开搞
-## 移除图片
-
-虽然后续代码会禁用这个图片，但是为了减少不必要的资源浪费如备份模板不用带这个多余的图片打包在里面，这里还是提前删了好
-
-Blogger - Theme - CUSTOMIZE
-Background image - Remove Image
-
-## 查找对应 Background image 项目代码
-
-根据网页F12查到对应位置为
-<div class='bg-photo-container'>
-
-## 禁用 Background image 模块
-
-Blogger - Theme - CUSTOMIZE 旁的小三角 - Edit HTML
-Ctrl+F 搜索来到2973行
-class='bg-photo-container'
-的内容为
-```
-      <div class='bg-photo-container'>
-        <div class='bg-photo'/>
-      </div>
-```
-在中间添加两行将其注释掉改为
-```
-      <div class='bg-photo-container'>
-        <!--
-        <div class='bg-photo'/>
-        -->
-      </div>
-```
-
-//禁用后 Background image 添加任何图片都不会再显示
-
-## 添加 CSS 颜色代码（只推荐用第一种）
-
-Ctrl+F 搜索来到2655行
-```
-]]></b:skin>`
-```
-
-将这行往后移动并在其前面添加
-```
-/* Custom BG */
-
-.bg-photo-container {
-    background: #002fa7;
-}
-```
-
-右上角保存
-........................................................
-或是在设置内添加 CSS
-不推荐，Restore 后效果还在，但是 Add CSS 设置内代码丢失会被自动合并进 Edit HTML 的代码 ]]></b:skin> 前面成为重复代码
-这里列出只是说明有这么一种方法
-也可以通过这个办法代替第一种方法作为首次添加，备份恢复后自动导入进代码，没必要
-顺便通过这个办法确认了第一种方法的代码格式和位置都正确
-
-Blogger - Theme - CUSTOMIZE - Advanced - Page Text 下拉最底下 - Add CSS
-
-然后复制下面代码进去
-```
-/* Custom BG */
-
-.bg-photo-container {
-    background: #002fa7;
-}
-```
-
-右下角按钮保存
-
-## 导出备份
-
-Blogger - Theme - CUSTOMIZE旁的小三角 - Backup - DOWNLOAD
-同样位置 Restore 按需恢复备份
-
-# 最终效果
-![Image](https://github.com/user-attachments/assets/3f8ac211-a663-40cf-9533-f69969d2e4be)
-。">
+[https://www.">
 <meta property="og:title" content="Google Blogger 修改顶栏颜色替代图片">
 <meta property="og:description" content="<!-- ##{'timestamp':1715460960}## -->
 
@@ -108,94 +24,10 @@ Blogger - Theme - CUSTOMIZE旁的小三角 - Backup - DOWNLOAD
 
 原视频教程出处
 Live Blogger - 《How To Customize BG Image In Blogger Contempo Theme | Theme Editor》
-[https://www.youtube.com/watch?v=zMB0XeMcRZg&ab_channel=LiveBlogger](https://www.blogger.com/blog/post/edit/8151877248081093597/8992707372004594223#)
-
-因为 Blogger 默认顶栏只能设置添加图片，不能单独自定义颜色，klein.blue 的顶栏的风格只需要颜色不需要图像，之前就是曲线救国做了一张蓝色纯色图上传上去，正常来说没什么问题，但是国内直连所有图片都没法正确加载导致顶栏变成了当前主题默认的深灰色，所以就想研究怎么通过修改 CSS 代码之类将这个默认的深灰色像其余模块那样可以自定义为 #002FA7，问题很小众找了半天终于在 YouTube 搜到1个视频教程
-这样即使加载不了图片也还能显示出网站的背景颜色了
-
-# 开搞
-## 移除图片
-
-虽然后续代码会禁用这个图片，但是为了减少不必要的资源浪费如备份模板不用带这个多余的图片打包在里面，这里还是提前删了好
-
-Blogger - Theme - CUSTOMIZE
-Background image - Remove Image
-
-## 查找对应 Background image 项目代码
-
-根据网页F12查到对应位置为
-<div class='bg-photo-container'>
-
-## 禁用 Background image 模块
-
-Blogger - Theme - CUSTOMIZE 旁的小三角 - Edit HTML
-Ctrl+F 搜索来到2973行
-class='bg-photo-container'
-的内容为
-```
-      <div class='bg-photo-container'>
-        <div class='bg-photo'/>
-      </div>
-```
-在中间添加两行将其注释掉改为
-```
-      <div class='bg-photo-container'>
-        <!--
-        <div class='bg-photo'/>
-        -->
-      </div>
-```
-
-//禁用后 Background image 添加任何图片都不会再显示
-
-## 添加 CSS 颜色代码（只推荐用第一种）
-
-Ctrl+F 搜索来到2655行
-```
-]]></b:skin>`
-```
-
-将这行往后移动并在其前面添加
-```
-/* Custom BG */
-
-.bg-photo-container {
-    background: #002fa7;
-}
-```
-
-右上角保存
-........................................................
-或是在设置内添加 CSS
-不推荐，Restore 后效果还在，但是 Add CSS 设置内代码丢失会被自动合并进 Edit HTML 的代码 ]]></b:skin> 前面成为重复代码
-这里列出只是说明有这么一种方法
-也可以通过这个办法代替第一种方法作为首次添加，备份恢复后自动导入进代码，没必要
-顺便通过这个办法确认了第一种方法的代码格式和位置都正确
-
-Blogger - Theme - CUSTOMIZE - Advanced - Page Text 下拉最底下 - Add CSS
-
-然后复制下面代码进去
-```
-/* Custom BG */
-
-.bg-photo-container {
-    background: #002fa7;
-}
-```
-
-右下角按钮保存
-
-## 导出备份
-
-Blogger - Theme - CUSTOMIZE旁的小三角 - Backup - DOWNLOAD
-同样位置 Restore 按需恢复备份
-
-# 最终效果
-![Image](https://github.com/user-attachments/assets/3f8ac211-a663-40cf-9533-f69969d2e4be)
-。">
+[https://www.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://planenalp.github.io/IKB/post/Google%20Blogger%20-xiu-gai-ding-lan-yan-se-ti-dai-tu-pian.html">
-<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<meta property="og:url" content="https://international.klein.blue/post/11.html">
+<meta property="og:image" content="https://international.klein.blue/logo/favicon.svg">
 <title>Google Blogger 修改顶栏颜色替代图片</title>
 
 
@@ -241,20 +73,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="header">
 <h1 class="postTitle">Google Blogger 修改顶栏颜色替代图片</h1>
 <div class="title-right">
-    <a href="https://planenalp.github.io/IKB" id="buttonHome" class="btn btn-invisible circle" title="首页">
+    <a href="https://international.klein.blue" id="buttonHome" class="btn btn-invisible circle" title="home">
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd"></path>
         </svg>
     </a>
     
-    <a href="https://github.com/planenalp/IKB/issues/11" target="_blank" class="btn btn-invisible circle" title="Issue">
-        <svg class="octicon" width="16" height="16">
-            <path id="pathIssue" fill-rule="evenodd"></path>
-        </svg>
-    </a>
-    
 
-    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="switch theme">
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
         </svg>
@@ -329,12 +155,12 @@ class='bg-photo-container'<br>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/3f8ac211-a663-40cf-9533-f69969d2e4be"><img src="https://github.com/user-attachments/assets/3f8ac211-a663-40cf-9533-f69969d2e4be" alt="Image" style="max-width: 100%;"></a></p></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
-<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">comments</button>
 <div class="comments" id="comments"></div>
 
 </div>
-    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://planenalp.github.io/IKB">Blog Title</a></div>
-<div id="footer2">
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://international.klein.blue">International.Klein.Blue</a></div>
+<div id="footer2"><span id="filingNum"><a href="https://beian.miit.gov.cn/" target="_blank"><a href='https://icp.gov.moe/?keyword=20259061' target='_blank'>萌ICP备20259061号</a></a> • </span>
     <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
 </div>
 
@@ -346,7 +172,7 @@ if(""!=""){
     var startSite=new Date("");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
-    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+    document.getElementById("runday").innerHTML="run "+diffDay+" days"+" • ";
 }
 </script></div>
 </body>
@@ -384,7 +210,7 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 
 
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
-document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
 
 
 
@@ -490,6 +316,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 </script>
-
+<script src='https://international.klein.blue/assets/fancybox.umd.js'></script><script src='https://international.klein.blue/assets/fancyboxLoad-IKB.js'></script><script src='https://international.klein.blue/assets/AriticleTocTopBot-IKB.js'></script>
 
 </html>

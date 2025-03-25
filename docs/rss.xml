@@ -1,15 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://planenalp.github.io/IKB</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://planenalp.github.io/IKB</link></image><lastBuildDate>Tue, 25 Mar 2025 18:51:08 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Link</title><link>https://planenalp.github.io/IKB/post/Link.html</link><description>nothing。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Link.html</guid><pubDate>Tue, 25 Mar 2025 18:14:28 +0000</pubDate></item><item><title>About</title><link>https://planenalp.github.io/IKB/post/About.html</link><description>很喜欢蓝色，机缘巧合下搞到了这个域名，真好~
-
-每次打开主页看到配色都会心情舒畅
-
-嘿嘿
-
-Email: intl@klein.blue。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/About.html</guid><pubDate>Tue, 25 Mar 2025 18:07:41 +0000</pubDate></item><item><title>痛失收入</title><link>https://planenalp.github.io/IKB/post/tong-shi-shou-ru.html</link><description>&lt;!-- ##{'timestamp':1741005660}## --&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>International.Klein.Blue</title><link>https://international.klein.blue</link><description>give you some color to see see</description><copyright>International.Klein.Blue</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://international.klein.blue/logo/favicon.svg</url><title>avatar</title><link>https://international.klein.blue</link></image><lastBuildDate>Tue, 25 Mar 2025 19:25:09 +0000</lastBuildDate><managingEditor>International.Klein.Blue</managingEditor><ttl>60</ttl><webMaster>International.Klein.Blue</webMaster><item><title>痛失收入</title><link>https://international.klein.blue/post/13.html</link><description>&lt;!-- ##{'timestamp':1741005660}## --&gt;
 
 一楼铺位的阿姨不租了，头疼
 
-![Image](https://github.com/user-attachments/assets/d0880068-3d9f-4ddb-9ea2-0e599bea167d)。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/tong-shi-shou-ru.html</guid><pubDate>Mon, 03 Mar 2025 12:41:00 +0000</pubDate></item><item><title>重见天日</title><link>https://planenalp.github.io/IKB/post/zhong-jian-tian-ri.html</link><description>&lt;!-- ##{'timestamp':1739214960}## --&gt;
+![Image](https://github.</description><guid isPermaLink="true">https://international.klein.blue/post/13.html</guid><pubDate>Mon, 03 Mar 2025 12:41:00 +0000</pubDate></item><item><title>重见天日</title><link>https://international.klein.blue/post/12.html</link><description>&lt;!-- ##{'timestamp':1739214960}## --&gt;
 
 # 没得玩了
 
@@ -24,116 +18,44 @@ Email: intl@klein.blue。</description><guid isPermaLink="true">https://planenal
 
 # 2025/02/28 更新
 
-这几天转到 GitHub Pages 咯，好玩~。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/zhong-jian-tian-ri.html</guid><pubDate>Mon, 10 Feb 2025 19:16:00 +0000</pubDate></item><item><title>Google Blogger 修改顶栏颜色替代图片</title><link>https://planenalp.github.io/IKB/post/Google%20Blogger%20-xiu-gai-ding-lan-yan-se-ti-dai-tu-pian.html</link><description>&lt;!-- ##{'timestamp':1715460960}## --&gt;
+这几天转到 GitHub Pages 咯，好玩~.</description><guid isPermaLink="true">https://international.klein.blue/post/12.html</guid><pubDate>Mon, 10 Feb 2025 19:16:00 +0000</pubDate></item><item><title>Google Blogger 修改顶栏颜色替代图片</title><link>https://international.klein.blue/post/11.html</link><description>&lt;!-- ##{'timestamp':1715460960}## --&gt;
 
 # 前言
 
 原视频教程出处
 Live Blogger - 《How To Customize BG Image In Blogger Contempo Theme | Theme Editor》
-[https://www.youtube.com/watch?v=zMB0XeMcRZg&amp;ab_channel=LiveBlogger](https://www.blogger.com/blog/post/edit/8151877248081093597/8992707372004594223#)
+[https://www.</description><guid isPermaLink="true">https://international.klein.blue/post/11.html</guid><pubDate>Sat, 11 May 2024 20:56:00 +0000</pubDate></item><item><title>浑浑噩噩又1年</title><link>https://international.klein.blue/post/10.html</link><description>&lt;!-- ##{'timestamp':1714800000}## --&gt;
 
-因为 Blogger 默认顶栏只能设置添加图片，不能单独自定义颜色，klein.blue 的顶栏的风格只需要颜色不需要图像，之前就是曲线救国做了一张蓝色纯色图上传上去，正常来说没什么问题，但是国内直连所有图片都没法正确加载导致顶栏变成了当前主题默认的深灰色，所以就想研究怎么通过修改 CSS 代码之类将这个默认的深灰色像其余模块那样可以自定义为 #002FA7，问题很小众找了半天终于在 YouTube 搜到1个视频教程
-这样即使加载不了图片也还能显示出网站的背景颜色了
+去年开始做的视频号一做起来马上就有超级多的内容想要发，但是又怕一下子发太多全部发完了，于是故意强迫自己暂停一下缓缓脚步，结果一停就停到了现在哈哈，自从最后一期电烙铁支架发完没多久获得创作激励资格以来还没另外再发过一期。。尴尬
 
-# 开搞
-## 移除图片
+之前不知道什么原因这个域名突然跟博客断连了，导致这里也荒废了很长一段时间，估计跟 Google Domains 关停被迫临时转移域名到 Wordpress 有关，之前尝试过几次修复一直没成功，刚刚终于下定决心要弄好不然这么帅的域名就浪费了，虽然实际上也没人会来看。。
 
-虽然后续代码会禁用这个图片，但是为了减少不必要的资源浪费如备份模板不用带这个多余的图片打包在里面，这里还是提前删了好
+想到这里突然发现，这么一个从我高中就开始折腾过到现在已经变得特别冷清的 Blogspot，竟然这么多年都没有被砍，反而是特别好用的 Google Domains 没坚持两年就倒了，真可惜
 
-Blogger - Theme - CUSTOMIZE
-Background image - Remove Image
+前段时间研究比较久的建站和虚拟机的内容，真应该早点做成全流程视频教程的，现在一段时间没碰已经完全忘记操作步骤了
 
-## 查找对应 Background image 项目代码
+最近在花大量时间研究 DeepFaceLab，起因是有一天在 YouTube 上闲逛无意中看到一个 Roop Unleashed 的换脸教程，感叹现在技术这么进步了，感觉学着下载玩了下，然后发现效果太垃圾了。。。搜了下大家的说法，王者依然是 DeepFaceLab，即使已经很久没更新，这么好的开源软件断更太可惜了，其实早就知道 DeepFaceLab 的原理，最开始想做视频也是因为近期 AI 发展在视频和音频上都已经达到了可用的级别想趁机留点自己的数据，只是一直都知道很麻烦，现在莫名其妙提前踩进坑里来了。。只是麻烦程度比想象中的还要大10倍，太坑了
 
-根据网页F12查到对应位置为
-&lt;div class='bg-photo-container'&gt;
-
-## 禁用 Background image 模块
-
-Blogger - Theme - CUSTOMIZE 旁的小三角 - Edit HTML
-Ctrl+F 搜索来到2973行
-class='bg-photo-container'
-的内容为
-```
-      &lt;div class='bg-photo-container'&gt;
-        &lt;div class='bg-photo'/&gt;
-      &lt;/div&gt;
-```
-在中间添加两行将其注释掉改为
-```
-      &lt;div class='bg-photo-container'&gt;
-        &lt;!--
-        &lt;div class='bg-photo'/&gt;
-        --&gt;
-      &lt;/div&gt;
-```
-
-//禁用后 Background image 添加任何图片都不会再显示
-
-## 添加 CSS 颜色代码（只推荐用第一种）
-
-Ctrl+F 搜索来到2655行
-```
-]]&gt;&lt;/b:skin&gt;`
-```
-
-将这行往后移动并在其前面添加
-```
-/* Custom BG */
-
-.bg-photo-container {
-    background: #002fa7;
-}
-```
-
-右上角保存
-........................................................
-或是在设置内添加 CSS
-不推荐，Restore 后效果还在，但是 Add CSS 设置内代码丢失会被自动合并进 Edit HTML 的代码 ]]&gt;&lt;/b:skin&gt; 前面成为重复代码
-这里列出只是说明有这么一种方法
-也可以通过这个办法代替第一种方法作为首次添加，备份恢复后自动导入进代码，没必要
-顺便通过这个办法确认了第一种方法的代码格式和位置都正确
-
-Blogger - Theme - CUSTOMIZE - Advanced - Page Text 下拉最底下 - Add CSS
-
-然后复制下面代码进去
-```
-/* Custom BG */
-
-.bg-photo-container {
-    background: #002fa7;
-}
-```
-
-右下角按钮保存
-
-## 导出备份
-
-Blogger - Theme - CUSTOMIZE旁的小三角 - Backup - DOWNLOAD
-同样位置 Restore 按需恢复备份
-
-# 最终效果
-![Image](https://github.com/user-attachments/assets/3f8ac211-a663-40cf-9533-f69969d2e4be)
-。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Google%20Blogger%20-xiu-gai-ding-lan-yan-se-ti-dai-tu-pian.html</guid><pubDate>Sat, 11 May 2024 20:56:00 +0000</pubDate></item><item><title>浑浑噩噩又1年</title><link>https://planenalp.github.io/IKB/post/hun-hun-e-e-you-1-nian.html</link><description>&lt;!-- ##{'timestamp':1714800000}## --&gt;
-
-去年开始做的视频号一做起来马上就有超级多的内容想要发，但是又怕一下子发太多全部发完了，于是故意强迫自己暂停一下缓缓脚步，结果一停就停到了现在哈哈，自从最后一期电烙铁支架发完没多久获得创作激励资格以来还没另外再发过一期。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/hun-hun-e-e-you-1-nian.html</guid><pubDate>Sat, 04 May 2024 05:20:00 +0000</pubDate></item><item><title>新手做视频的迷茫</title><link>https://planenalp.github.io/IKB/post/xin-shou-zuo-shi-pin-de-mi-mang.html</link><description>&lt;!-- ##{'timestamp':1680969660}## --&gt;
+耗时、耗电、耗精力，还不一定搞得好，需要长时间试错，跟最开始研究 FDM 的 3D 打印机差不多，甚至还要更麻烦，一开始切脸走了歪路就已经浪费了一两周，都差点想弃坑了，不是一般的难.</description><guid isPermaLink="true">https://international.klein.blue/post/10.html</guid><pubDate>Sat, 04 May 2024 05:20:00 +0000</pubDate></item><item><title>新手做视频的迷茫</title><link>https://international.klein.blue/post/9.html</link><description>&lt;!-- ##{'timestamp':1680969660}## --&gt;
 
 # 无头苍蝇
 
 这几天一直在准备把自己折腾的 PS + AI 做 logo 的办法做成视频教程，开始了才发现准备一期视频真不容易，要简单易懂同时详略得当，不能啰嗦，还要适当想一些梗防止过于硬核枯燥
 
-像第一期的 Hello World! 视频就明显没人看，因为里面除了瞎哔哔什么都没有，才50多秒的视频完播率连一半都没有，哈哈。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/xin-shou-zuo-shi-pin-de-mi-mang.html</guid><pubDate>Sat, 08 Apr 2023 16:01:00 +0000</pubDate></item><item><title>意外之财</title><link>https://planenalp.github.io/IKB/post/yi-wai-zhi-cai.html</link><description>&lt;!-- ##{'timestamp':1680449400}## --&gt;
+像第一期的 Hello World! 视频就明显没人看，因为里面除了瞎哔哔什么都没有，才50多秒的视频完播率连一半都没有，哈哈。。这是得有多差劲才能做到😂
+虽然如此我还是想嘴硬一下，那期其实完全没必要做的，诞生出来纯粹是个人任性行为，可以理解为开工仪式吧~所以本来就没期待数据会有多好看
+即使如此，那期视频还是弄了我很久，文案修改了无数次，录音也重复了无数次，总是弄得不满意，到最后干脆摆烂了。。反正也不会有几个人看
+
+现在这个新视频，想要没差错还必须提前重复好几次来边做边优化流程，不过这样也变相让我对这些知识点有更深了解，也更熟练了，果然学习金字塔说得没错，想学会一样东西的话，直接做到可教人的程度才是吸收得最好的形式
+
+![Image](https://github.</description><guid isPermaLink="true">https://international.klein.blue/post/9.html</guid><pubDate>Sat, 08 Apr 2023 16:01:00 +0000</pubDate></item><item><title>意外之财</title><link>https://international.klein.blue/post/8.html</link><description>&lt;!-- ##{'timestamp':1680449400}## --&gt;
 
 # 第一天
 
 今天把之前装修拆出来的铝合金门框、废铁门和存了两三年的大部分纸箱卖掉
 竟然收获了1398元！！！WOW！
 
-![Image](https://github.com/user-attachments/assets/7e945d5b-d304-4c80-a86b-051ea0ed18c6)
-
-以前也不是没卖过废品，但是这绝对是这辈子以来卖废品赚得最多的一次！
-而且还没卖完，捆纸皮到快天黑那个阿姨就先回去了，明天下午再来继续，不过剩下的不多估计最多只有100元左右
-预计全部卖完，大约三分之二是靠6元一斤的铝合金撑起来的，超乎想象啊。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/yi-wai-zhi-cai.html</guid><pubDate>Sun, 02 Apr 2023 15:30:00 +0000</pubDate></item><item><title>干冰迟钝结冰人</title><link>https://planenalp.github.io/IKB/post/gan-bing-chi-dun-jie-bing-ren.html</link><description>&lt;!-- ##{'timestamp':1680432600}## --&gt;
+![Image](https://github.</description><guid isPermaLink="true">https://international.klein.blue/post/8.html</guid><pubDate>Sun, 02 Apr 2023 15:30:00 +0000</pubDate></item><item><title>干冰迟钝结冰人</title><link>https://international.klein.blue/post/7.html</link><description>&lt;!-- ##{'timestamp':1680432600}## --&gt;
 
 今天做了个有点奇怪的梦，也不能说是噩梦，就是哪里怪怪的
 
@@ -151,13 +73,23 @@ Blogger - Theme - CUSTOMIZE旁的小三角 - Backup - DOWNLOAD
 
 搜了下这段话，没有任何匹配的信息
 
-写到这里手机突然自己掉到了地上。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/gan-bing-chi-dun-jie-bing-ren.html</guid><pubDate>Sun, 02 Apr 2023 10:50:00 +0000</pubDate></item><item><title>第一次投稿</title><link>https://planenalp.github.io/IKB/post/di-yi-ci-tou-gao.html</link><description>&lt;!-- ##{'timestamp':1680310440}## --&gt;
+写到这里手机突然自己掉到了地上。。吓我一跳
+
+所以我是不是不该把这个发出来呢？
+
+![Image](https://github.</description><guid isPermaLink="true">https://international.klein.blue/post/7.html</guid><pubDate>Sun, 02 Apr 2023 10:50:00 +0000</pubDate></item><item><title>第一次投稿</title><link>https://international.klein.blue/post/6.html</link><description>&lt;!-- ##{'timestamp':1680310440}## --&gt;
 
 # 手抖尝试
 
 刚终于用 GodPan 账号在B站投下第一个视频稿件，定在4月1日中午12点整发布
 
-我也没想到会投去生活区，但是好像也没别的区可以投了，毕竟内容全是口音不太正的废话，没有任何干活也没有任何整活，只是宣扬了下我要开始做视频了，还有主站网址也提了一嘴，希望这种没营养的视频可以被喷轻点。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/di-yi-ci-tou-gao.html</guid><pubDate>Sat, 01 Apr 2023 00:54:00 +0000</pubDate></item><item><title>本来挺喜欢做 LOGO 的</title><link>https://planenalp.github.io/IKB/post/ben-lai-ting-xi-huan-zuo-%20LOGO%20-de.html</link><description>&lt;!-- ##{'timestamp':1680303840}## --&gt;
+我也没想到会投去生活区，但是好像也没别的区可以投了，毕竟内容全是口音不太正的废话，没有任何干活也没有任何整活，只是宣扬了下我要开始做视频了，还有主站网址也提了一嘴，希望这种没营养的视频可以被喷轻点。。甚至有可能被审核判为垃圾视频而不给我通过。。
+
+YouTube也发了，毕竟之后的教程两边都会同步更新，虽然这第一个是垃圾视频，但是还是也同步下吧。实际操作一轮后才发现原来YouTube指定发布时间不能是当天的，必须是下一天也就是4月2日，除非马上发布不指定时间，所以就只能被迫马上发了，想不到YouTube后操作的反而更早上架
+
+以前从来都是单对单交流，现在正式开始面向一群人，接下来要被人审视被人批评被人吐槽也有可能被人鼓励，有点紧张，希望一切顺利吧
+
+![Image](https://github.</description><guid isPermaLink="true">https://international.klein.blue/post/6.html</guid><pubDate>Sat, 01 Apr 2023 00:54:00 +0000</pubDate></item><item><title>本来挺喜欢做 LOGO 的</title><link>https://international.klein.blue/post/5.html</link><description>&lt;!-- ##{'timestamp':1680303840}## --&gt;
 
 # 现在更喜欢了
 
@@ -166,12 +98,7 @@ Blogger - Theme - CUSTOMIZE旁的小三角 - Backup - DOWNLOAD
 但是做完之后竟然感觉有点帅气？这是什么情况！？？？
 
 ## from
-![Image](https://github.com/user-attachments/assets/4e0d29a4-4be5-4108-8cbb-00f4e4d2d838)
-
-## to
-![Image](https://github.com/user-attachments/assets/59532781-aa4d-4c1b-8894-642fb4decc47)
-
-。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/ben-lai-ting-xi-huan-zuo-%20LOGO%20-de.html</guid><pubDate>Fri, 31 Mar 2023 23:04:00 +0000</pubDate></item><item><title>薛定谔的 NAS</title><link>https://planenalp.github.io/IKB/post/xue-ding-e-de-%20NAS.html</link><description>&lt;!-- ##{'timestamp':1680252720}## --&gt;
+![Image](https://github.</description><guid isPermaLink="true">https://international.klein.blue/post/5.html</guid><pubDate>Fri, 31 Mar 2023 23:04:00 +0000</pubDate></item><item><title>薛定谔的 NAS</title><link>https://international.klein.blue/post/4.html</link><description>&lt;!-- ##{'timestamp':1680252720}## --&gt;
 
 # 突如其来的罢工
 自从组建好以来，一向兢兢业业运行良好的第一台 UNRAID NAS，昨晚睡觉前改 LOGO 的时候还正常用着，结果今天中午起床准备吃饭前玩了下电脑发现，我的映射盘怎么全部显示断连了？？？此时 NAS 后台登录网页也完全打不开
@@ -198,76 +125,12 @@ Blogger - Theme - CUSTOMIZE旁的小三角 - Backup - DOWNLOAD
 
 # 猝不及防的恢复
 下午四点多醒来顺手再尝试一下开机竟然直接进入系统了？？
-所以这是 NAS 连续007工作几个月后撑不住了想休息下？。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/xue-ding-e-de-%20NAS.html</guid><pubDate>Fri, 31 Mar 2023 08:52:00 +0000</pubDate></item><item><title>Hello, World!</title><link>https://planenalp.github.io/IKB/post/Hello%2C%20World%21.html</link><description>&lt;!-- ##{'timestamp':1680075000}## --&gt;
+所以这是 NAS 连续007工作几个月后撑不住了想休息下？.</description><guid isPermaLink="true">https://international.klein.blue/post/4.html</guid><pubDate>Fri, 31 Mar 2023 08:52:00 +0000</pubDate></item><item><title>Hello, World!</title><link>https://international.klein.blue/post/3.html</link><description>&lt;!-- ##{'timestamp':1680075000}## --&gt;
 
-## 观前提示：这只是一篇关于 klein.blue 域名由来的碎碎念
+## 观前提示：这只是一篇关于 klein.</description><guid isPermaLink="true">https://international.klein.blue/post/3.html</guid><pubDate>Wed, 29 Mar 2023 07:30:00 +0000</pubDate></item><item><title>About</title><link>https://international.klein.blue/about.html</link><description>很喜欢蓝色，机缘巧合下搞到了这个域名，真好~
 
-# 人生首次为颜色买单
-前段时间折腾 NAS 开始接触域名相关领域，当一直以来最爱蓝色的我第一次发现竟然还有 klein.blue 这样的域名时，直接🤩🤩🤩
+每次打开主页看到配色都会心情舒畅
 
-虽然显示已经被注册，但是还是念念不忘，一直保留在 Google Domains 的收藏夹里舍不得删掉，偶尔一次查别的域名 Whois 归属时顺便查了下这个发现竟然马上就到期可以注册！当时简直开心到爆炸！
+嘿嘿
 
-接着就是开始漫长的等待，终于到了显示到期释放的那天，然后跑到各个注册商里面搜索注册，但是都没有注册的选项，能查到的域名注册管理机构是艾斐域 (Afilias)，Whois显示域名已释放可以进去申请注册，但是我特意去官网翻遍了也没有找到给普通人注册的方式，第一次完全不懂这种情况应该是要通过域名商抢注的，我抱着侥幸心理妄想这个应该也不算什么特别抢手的域名就没研究抢注的事情，以为是没开放注册就等着每天刷新等注册按钮，结果晴天霹雳，注册的方式没等到，却迎来了最不想碰到的局面，突然有一天Whois内显示已经名花有主，是 west.cn 的注册商，说明已经有人通过 west.cn 抢注，看到这里心都要碎了
-
-虽然被抢注了很可惜，但我还是不死心，妄想着这个抢注了的会不会是个专门倒卖域名的人呢？会不会很快放出来卖呢？如果价格合适我是不是还有机会入手呢？
-
-所以平时没事就直接打开这个域名进去看看会不会显示售卖中的托管网页，结果竟然还真在2023年3月23日被我等到了！打开后自动跳转到 dan.com 的销售页面，售价600美金，甚至还可以分6期免息支付，价格不算离谱，和 Godaddy 上关于这个域名的预估价值一样，虽然一下子出600美金出不起，但是因为能分期，每个月100美金咬咬牙还是承担得了的，然后我的牙就被迫开始了练习时长6个月的折磨
-
-原本理论上是可以直接抢注的域名变成了要花600美金的代价才拿到手，虽然有点亏，但是也只能安慰自己即使抢注应该也会不多不少要竞拍一点钱才拿得到吧
-
-# 域名之外的配套
-兜兜转转终于可以获得，总的来说还是很开心的，还特意为此设计了个 logo，虽然没什么经验水平一般，但聊胜于无吧，毕竟近年来版权问题发展方向越来越有点矫枉过正的味道了，为了避免莫名其妙收律师函的可能性还是决定自己搞一个比较稳妥
-
-用来用去感觉带文字的 ID 图做头像的话太复杂了，不过意外发现作为头图很合适
-最终决定全部头像统一采用 Favicon 的图，切圆角后好像有点 APP 图标的意思了哈哈，自我感觉良好中
-
-![Image](https://github.com/user-attachments/assets/d18cce9b-b169-4635-8b0b-2f51bb6a3425)
-Banner
-
-![Image](https://github.com/user-attachments/assets/15b89e65-3cfc-40f9-96a5-b3f497bd8f0e)
-Favicon + Avatar
-
-还有想破头想了很久不能和别人冲突的 ID，最终只能确定一个相对有点绕同时也比较有意思的 Hex002FA7，虽然有 instagram 和 tumblr 里面被抢注了，但是问题不大，我也不是非要在这两个地方发表什么东西，真要的话最多在两个上面改成 -Hex002FA7- 就好
-
-不得不说克莱因蓝这个相关的id实在抢手，虽然B站内似乎还有 IntlKB 可用（没验证，因为低于2级的号搜不出来，确认是否已被抢注的尝试又需要消耗6个硬币，耗不起，无法理解这两个叠加起来形成的反人类机制到底有什么意义），但是在其它网站也被抢注了（Twitter 等），不过 IntlKB 看着也有点乱，所以就还好吧，不算太可惜
-
-至于其它类似的
-
-- 克莱因蓝
-- KleinBlue
-- 克莱因蓝KleinBlue
-- -KleinBlue-
-- IntlKleinBlue
-- 002FA7
-- -002FA7-
-- IKB002FA7
-
-等等等等，好家伙在B站这里几乎能想到的都被注册了，捅克莱因蓝窝了这是
-最后综合各大平台判断剩下含义相对贴切且能用的就三种：
-
-- Hex002FA7
-- 蓝002FA7/Blue002FA7
-- KleinBlueKB
-
-Hex002FA7 就是要绕一下才知道是克莱因蓝，但是只有9位字符，最大问题是要让人关联 klein.blue 这个域名的话要花点功夫，相对也有点像乱码不是太好记，懂的人就很好理解，不懂的就很难解释含义，不是很完美，但是好像也没别的好办法了，折中的解决办法就是通过 logo 上直接加 Klein.Blue 字样来洗脑
-
-蓝002FA7/Blue002FA7 就是类似车牌这样，最开始打算B站用蓝002FA7，YouTube 和 注册的 ID 用 Blue002FA7，后来发现 Hex002FA7 更好就弃用这个方案了
-
-KleinBlueKB 是易记，但是作为 ID 来说有点蠢，长度也离谱11位字符，KleinBlue 本身已经很长，再随便点别的元素都会长到不得了，KleinBlueKB 已经是最极限短的变形
-
-4月5号更新：
-Hex002FA7 这个 ID 总是感觉意义回路太长了，不是非常满意，所以一直没事就会开脑洞想有没有更好的，今天突然想出来一个 KleinDotBlue，完美和域名结合，询问过 ChatGPT 意见也是认为这个比起其它除了 KleinBlue 以外的都要更加理想，所以就决定把所有位置的 ID 都统一改为 KleinDotBlue了，这个组合也完全没有人用过，完美！
-本来还考虑B站之类的位置用中文克莱因点蓝，想想还是算了，全部统一英语更方便搜索
-
-# 建站方向
-这里就用来更一些非技术性的生活琐碎事吧，毕竟这种内容不是每个人都有兴趣看的，我又不是什么名人，也不够幽默风趣，但也是为将来潘神计划洒下的一颗种子
-
-之前的 godpan.com 已经特意注册了个每个月34元月租的香港服务器来做 wordpress 建站，现在还来一个的话肯定会吃不消，也没必要，所以一开始考虑两个免费的选项
-
-- GitHub Pages
-- Google Blogger
-
-GitHub Pages 完全按照教程折腾了几次都没成功把域名添加进去，弄烦了干脆直接用 Google Blogger，毕竟消耗大量精力去建站太舍本逐末，分享的内容才是重点，反正都是被墙的，两个都没差了，能进来的都能来，进不来的也不方便教，即使通过旁门左道 CDN、改图床什么乱七八糟的方式折腾到不用翻墙也能完整访问，根据多年经验可以肯定效果也只是暂时的，唯一根本解决办法就是像 godpan.com 那样买境外服务器来建站，所以就这样吧，反正这个 Blogger 平台只要 Google 没有哪天抽风像曾经的 Reader 全部砍掉的话，应该反而会是理论上可存活时间最长最安全的养老居所
-
-最后惯例提一嘴这个博客的原始地址是 002fa7.blogspot.com
-万一哪天不可抗力 klein.blue 没法续费，还可以通过原始地址进来观光，虽然应该也没几个人会来。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Hello%2C%20World%21.html</guid><pubDate>Wed, 29 Mar 2023 07:30:00 +0000</pubDate></item></channel></rss>
+Email: intl@klein.</description><guid isPermaLink="true">https://international.klein.blue/about.html</guid><pubDate>Tue, 25 Mar 2025 18:07:41 +0000</pubDate></item><item><title>Link</title><link>https://international.klein.blue/link.html</link><description>nothing.</description><guid isPermaLink="true">https://international.klein.blue/link.html</guid><pubDate>Tue, 25 Mar 2025 18:14:28 +0000</pubDate></item></channel></rss>
