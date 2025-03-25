@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // 添加 Fancybox CSS
     const fancyboxLink = Object.assign(document.createElement('link'), {
         rel: 'stylesheet',
-        href: 'https://klein.blue/assets/fancybox.css' // 根据实际需要修改此链接
+        href: 'https://international.klein.blue/assets/fancybox.css' // 根据实际需要修改此链接
     });
     document.head.appendChild(fancyboxLink);
 
