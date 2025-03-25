@@ -1,11 +1,101 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://planenalp.github.io/IKB</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://planenalp.github.io/IKB</link></image><lastBuildDate>Tue, 25 Mar 2025 18:30:03 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Link</title><link>https://planenalp.github.io/IKB/post/Link.html</link><description>nothing。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Link.html</guid><pubDate>Tue, 25 Mar 2025 18:14:28 +0000</pubDate></item><item><title>About</title><link>https://planenalp.github.io/IKB/post/About.html</link><description>很喜欢蓝色，机缘巧合下搞到了这个域名，真好~
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://planenalp.github.io/IKB</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://planenalp.github.io/IKB</link></image><lastBuildDate>Tue, 25 Mar 2025 18:38:36 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Link</title><link>https://planenalp.github.io/IKB/post/Link.html</link><description>nothing。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Link.html</guid><pubDate>Tue, 25 Mar 2025 18:14:28 +0000</pubDate></item><item><title>About</title><link>https://planenalp.github.io/IKB/post/About.html</link><description>很喜欢蓝色，机缘巧合下搞到了这个域名，真好~
 
 每次打开主页看到配色都会心情舒畅
 
 嘿嘿
 
-Email: intl@klein.blue。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/About.html</guid><pubDate>Tue, 25 Mar 2025 18:07:41 +0000</pubDate></item><item><title>浑浑噩噩又1年</title><link>https://planenalp.github.io/IKB/post/hun-hun-e-e-you-1-nian.html</link><description>&lt;!-- ##{'timestamp':1714800000}## --&gt;
+Email: intl@klein.blue。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/About.html</guid><pubDate>Tue, 25 Mar 2025 18:07:41 +0000</pubDate></item><item><title>Google Blogger 修改顶栏颜色替代图片</title><link>https://planenalp.github.io/IKB/post/Google%20Blogger%20-xiu-gai-ding-lan-yan-se-ti-dai-tu-pian.html</link><description>&lt;!-- ##{'timestamp':1715460960}## --&gt;
+
+# 前言
+
+原视频教程出处
+Live Blogger - 《How To Customize BG Image In Blogger Contempo Theme | Theme Editor》
+[https://www.youtube.com/watch?v=zMB0XeMcRZg&amp;ab_channel=LiveBlogger](https://www.blogger.com/blog/post/edit/8151877248081093597/8992707372004594223#)
+
+因为 Blogger 默认顶栏只能设置添加图片，不能单独自定义颜色，klein.blue 的顶栏的风格只需要颜色不需要图像，之前就是曲线救国做了一张蓝色纯色图上传上去，正常来说没什么问题，但是国内直连所有图片都没法正确加载导致顶栏变成了当前主题默认的深灰色，所以就想研究怎么通过修改 CSS 代码之类将这个默认的深灰色像其余模块那样可以自定义为 #002FA7，问题很小众找了半天终于在 YouTube 搜到1个视频教程
+这样即使加载不了图片也还能显示出网站的背景颜色了
+
+# 开搞
+## 移除图片
+
+虽然后续代码会禁用这个图片，但是为了减少不必要的资源浪费如备份模板不用带这个多余的图片打包在里面，这里还是提前删了好
+
+Blogger - Theme - CUSTOMIZE
+Background image - Remove Image
+
+## 查找对应 Background image 项目代码
+
+根据网页F12查到对应位置为
+&lt;div class='bg-photo-container'&gt;
+
+## 禁用 Background image 模块
+
+Blogger - Theme - CUSTOMIZE 旁的小三角 - Edit HTML
+Ctrl+F 搜索来到2973行
+class='bg-photo-container'
+的内容为
+```
+      &lt;div class='bg-photo-container'&gt;
+        &lt;div class='bg-photo'/&gt;
+      &lt;/div&gt;
+```
+在中间添加两行将其注释掉改为
+```
+      &lt;div class='bg-photo-container'&gt;
+        &lt;!--
+        &lt;div class='bg-photo'/&gt;
+        --&gt;
+      &lt;/div&gt;
+```
+
+//禁用后 Background image 添加任何图片都不会再显示
+
+## 添加 CSS 颜色代码（只推荐用第一种）
+
+Ctrl+F 搜索来到2655行
+```
+]]&gt;&lt;/b:skin&gt;`
+```
+
+将这行往后移动并在其前面添加
+```
+/* Custom BG */
+
+.bg-photo-container {
+    background: #002fa7;
+}
+```
+
+右上角保存
+........................................................
+或是在设置内添加 CSS
+不推荐，Restore 后效果还在，但是 Add CSS 设置内代码丢失会被自动合并进 Edit HTML 的代码 ]]&gt;&lt;/b:skin&gt; 前面成为重复代码
+这里列出只是说明有这么一种方法
+也可以通过这个办法代替第一种方法作为首次添加，备份恢复后自动导入进代码，没必要
+顺便通过这个办法确认了第一种方法的代码格式和位置都正确
+
+Blogger - Theme - CUSTOMIZE - Advanced - Page Text 下拉最底下 - Add CSS
+
+然后复制下面代码进去
+```
+/* Custom BG */
+
+.bg-photo-container {
+    background: #002fa7;
+}
+```
+
+右下角按钮保存
+
+## 导出备份
+
+Blogger - Theme - CUSTOMIZE旁的小三角 - Backup - DOWNLOAD
+同样位置 Restore 按需恢复备份
+
+# 最终效果
+![Image](https://github.com/user-attachments/assets/3f8ac211-a663-40cf-9533-f69969d2e4be)
+。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Google%20Blogger%20-xiu-gai-ding-lan-yan-se-ti-dai-tu-pian.html</guid><pubDate>Sat, 11 May 2024 20:56:00 +0000</pubDate></item><item><title>浑浑噩噩又1年</title><link>https://planenalp.github.io/IKB/post/hun-hun-e-e-you-1-nian.html</link><description>&lt;!-- ##{'timestamp':1714800000}## --&gt;
 
 去年开始做的视频号一做起来马上就有超级多的内容想要发，但是又怕一下子发太多全部发完了，于是故意强迫自己暂停一下缓缓脚步，结果一停就停到了现在哈哈，自从最后一期电烙铁支架发完没多久获得创作激励资格以来还没另外再发过一期。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/hun-hun-e-e-you-1-nian.html</guid><pubDate>Sat, 04 May 2024 05:20:00 +0000</pubDate></item><item><title>新手做视频的迷茫</title><link>https://planenalp.github.io/IKB/post/xin-shou-zuo-shi-pin-de-mi-mang.html</link><description>&lt;!-- ##{'timestamp':1680969660}## --&gt;
 
