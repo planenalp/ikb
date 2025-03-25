@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const prefix = targetTheme === 'dark' ? 'bgDark' : 'bgLight';
             const totalImages = 10;
             const randomNum = Math.floor(Math.random() * totalImages) + 1;
-            const baseUrl = `https://planenalp.github.io/bg/${prefix}${randomNum}`;
+            const baseUrl = `https://international.klein.blue/bg/${prefix}${randomNum}`;
 
             try {
                 const finalUrl = await probeFormat(baseUrl);
@@ -192,19 +192,19 @@ document.addEventListener('DOMContentLoaded', function() {
     globalStyle.innerHTML = `
     /* 通用默认亮主题配色 */
     :root {
-        /* --bgURL: url("https://planenalp.github.io/bgLight.webp"); */
-        --avatarURL: url("https://planenalp.github.io/avatar-blue.svg");
+        /* --bgURL: url("https://international.klein.blue/logo/bgLight.webp"); */
+        --avatarURL: url("https://international.klein.blue/logo/avatar-blue.svg");
         --body-bgColor: #ffffffb3;
         --box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         --header-bgColor: #002fa7;
         --blogTitle-color: #002fa7;
         --subTitle-color: #002fa7;
         --postTitle-color: #002fa7;
-        --tagTitle-color: #ffffff;
+        --tagTitle-color: #f5f5f5;
         --border-color: #d0d7de;
         --SideNav-bgColor: #f6f8facc;
         --SideNav-hover-bgColor: #002fa7;
-        --text-hover-color: #ffffff;
+        --text-hover-color: #f5f5f5;
         --themeSwitch-color: #656d76;
     }
     /* 通用暗主题配色 */
@@ -212,19 +212,19 @@ document.addEventListener('DOMContentLoaded', function() {
     [data-color-mode=light][data-light-theme=dark]::selection,
     [data-color-mode=dark][data-dark-theme=dark],
     [data-color-mode=dark][data-dark-theme=dark]::selection {
-        /* --bgURL: url("https://planenalp.github.io/bgDark.webp"); */
-        --avatarURL: url("https://planenalp.github.io/avatar-white.svg");
+        /* --bgURL: url("https://international.klein.blue/logo/bgDark.webp"); */
+        --avatarURL: url("https://international.klein.blue/logo/avatar-whitesmoke.svg");
         --body-bgColor: #0d1117b3;
         --box-shadow: 0 0 transparent;
         --header-bgColor: #002fa7;
-        --blogTitle-color: #ffffff;
-        --subTitle-color: #ffffff;
-        --postTitle-color: #ffffff;
-        --tagTitle-color: #ffffff;
+        --blogTitle-color: #f5f5f5;
+        --subTitle-color: #f5f5f5;
+        --postTitle-color: #f5f5f5;
+        --tagTitle-color: #f5f5f5;
         --border-color: #30363d;
         --SideNav-bgColor: #161b22cc;
         --SideNav-hover-bgColor: #002fa7;
-        --text-hover-color: #ffffff;
+        --text-hover-color: #f5f5f5;
         --themeSwitch-color: #7d8590;
     }
 
@@ -248,11 +248,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     /* 搜索页主题 */
     .search-theme {
-        --btn-hover-bgColor: #ffffff; /* 按钮高亮颜色 */
+        --btn-hover-bgColor: #f5f5f5; /* 按钮高亮颜色 */
     }
     [data-color-mode=dark].search-theme,
     [data-light-theme=dark].search-theme {
-        --btn-hover-bgColor: #ffffff; /* 按钮高亮颜色 */
+        --btn-hover-bgColor: #f5f5f5; /* 按钮高亮颜色 */
     }
      */
 
@@ -280,6 +280,17 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(globalStyle);
     // ==================== 全局CSS变量定义 END ====================
 
+    // ==================== Avatar点击跳转 START ====================
+    const avatarElement = document.getElementById('avatarImg') || document.querySelector('.avatar');
+    if (avatarElement) {
+        avatarElement.style.cursor = 'pointer';
+        avatarElement.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'https://klein.blue'; // 替换成你的目标链接
+        });
+    }
+    // ==================== Avatar点击跳转 END ====================
+
     
     //主页主题------------------------------------------------------------------------------
     if (currentUrl == '/' || currentUrl.includes('/index.html') || currentUrl.includes('/page')) {
@@ -290,7 +301,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         /* 主体布局 */
         body {
-            max-width: 1000px;
             background: var(--body-bgColor);
             box-shadow: var(--box-shadow);
         }
@@ -327,6 +337,9 @@ document.addEventListener('DOMContentLoaded', function() {
             background-color: transparent !important; /* 强制清除背景颜色 */
             border-radius: unset !important; /* 强制清除圆形框设置 */
             box-shadow: none !important; /* 强制清除边框 */
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
         }
 
         .avatar:hover {
@@ -378,13 +391,13 @@ document.addEventListener('DOMContentLoaded', function() {
             color: var(--themeSwitch-color);
         }
 
-        /* 主页文章列表 */
+        /* 文章列表主体 */
         .SideNav {
             background: var(--SideNav-bgColor);
             min-width: unset;
         }
 
-        /* 主页文章列表悬停高亮 */
+        /* 文章列表悬停高亮 */
         .SideNav-item:hover {
             background-color: var(--SideNav-hover-bgColor);
             color: var(--text-hover-color);
@@ -393,32 +406,46 @@ document.addEventListener('DOMContentLoaded', function() {
             transition: 0.1s; /* 弹起动画时长 */
         }
 
-        /* 主页文章列表点击缩放 */
+        /* 文章列表点击缩放 */
         .SideNav-item:active {
             transform: scale(1.0);
         }
 
+        /* 文章列表单项整栏 */
         .SideNav-item {
-            height: 75px; /* 文章列表靠左双行 */
             display: flex; /* 文章列表靠左双行 */
             flex-direction: column; /* 文章列表靠左双行 */
+            padding: 10px 10px !important; /* 减少多余间隔 */
         }
 
+        /* 文章列表首行 .SideNav-icon + .listTitle */
         .d-flex {
             display: flex !important; /* 文章列表靠左双行 */
             width: 100%; /* 文章列表靠左双行 */
-        }
-
-        .listLabels {
-            width: 100%; /* 文章列表靠左双行 */
-            display: flex; /* 文章列表靠左双行 */
-            justify-content: flex-end; /* 文章列表靠左双行 */
-            flex-direction: row-reverse; /* 文章列表靠左双行 */ 
+            padding-bottom: 5px; /* 底部留 5px 间隔 */
         }
 
         .SideNav-icon {
-            margin-right: 10px !important; /* 文章列表靠左双行 */ 
-            flex-shrink: 0; /* 文章列表靠左双行，禁止图标压缩导致间距消失 */ 
+            margin-right: 10px !important; /* 减少多余间距 */ 
+            flex-shrink: 0; /* 文章列表靠左双行，禁止图标压缩导致间距消失 */
+        }
+
+        .listTitle {
+            white-space: unset; /* 解锁换行 */
+        }
+
+        /* 文章列表第二行 .LabelTime + .LabelName */
+        .listLabels {
+            width: 100%; /* 文章列表靠左双行 */
+            display: flex !important; /* 文章列表靠左双行 */
+            flex-wrap: wrap; /* 解锁 Label 自动换行 */
+        }
+
+        .LabelTime {
+            order: 1; /* 调整两种 Label 顺序 */
+        }
+        .LabelName {
+            order: 2; /* 调整两种 Label 顺序 */
         }
 
         /* 关闭标签和时间的圆角 */
@@ -432,8 +459,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 padding: 8px !important;
             }
             .avatar {
-                width:100px !important;
-                height:100px !important;
+                width:80px !important; /* 标题缩小 */
+                height:80px !important; /* 标题缩小 */
+            }
+            #header {
+                height: 125px; /* 标题缩小 */
+                padding-bottom: unset; /* 标题缩小 */
+            }
+
+            #header h1 a {
+                font-size: 25px; /* 标题缩小 */
+            }
+
+            .title-right {
+                margin-top: 150px; /* 标题缩小 */
             }
             .blogTitle{
                 display:unset !important;
@@ -537,25 +576,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
         /* 主体布局 */
         body {
-            max-width: 1000px;
             background: var(--body-bgColor);
             box-shadow: var(--box-shadow);
         }
         
         /* 顶栏改色 */
         #header {
-            height: 140px; /* header 居中 */
             display: flex; /* header 居中 */
             flex-direction: column; /* header 居中 */
             align-items: center; /* header 居中 */
             background-color: var(--header-bgColor);
+            padding: 5px;
             padding-bottom: unset;
             border-bottom: unset;
         }
-
-        /* 顶栏字体颜色 */
+        
         .tagTitle {
-            color: var(--tagTitle-color);
+            color: var(--tagTitle-color); /* 顶栏字体颜色 */
+            white-space: unset; /* 顶栏字体允许自动换行 */
+            padding-bottom: 5px; /* 和搜索栏间隔5px */
         }
 
         /* 搜索+按钮区域 */
@@ -596,13 +635,13 @@ document.addEventListener('DOMContentLoaded', function() {
             color: var(--themeSwitch-color);
         }
 
-        /* 主页文章列表 */
+        /* 文章列表主体 */
         .SideNav {
             background: var(--SideNav-bgColor);
             min-width: unset;
         }
 
-        /* 主页文章列表悬停高亮 */
+        /* 文章列表悬停高亮 */
         .SideNav-item:hover {
             background-color: var(--SideNav-hover-bgColor);
             color: var(--text-hover-color);
@@ -611,27 +650,46 @@ document.addEventListener('DOMContentLoaded', function() {
             transition: 0.1s; /* 弹起动画时长 */
         }
 
-        .SideNav-item {
-            height: 75px; /* 文章列表靠左双行 */
-            display: flex; /* 文章列表靠左双行 */
-            flex-direction: column; /* 文章列表靠左双行 */
+        /* 文章列表点击缩放 */
+        .SideNav-item:active {
+            transform: scale(1.0);
         }
 
+        /* 文章列表单项整栏 */
+        .SideNav-item {
+            display: flex; /* 文章列表靠左双行 */
+            flex-direction: column; /* 文章列表靠左双行 */
+            padding: 10px 10px !important; /* 减少多余间隔 */
+        }
+
+        /* 文章列表首行 .SideNav-icon + .listTitle */
         .d-flex {
             display: flex !important; /* 文章列表靠左双行 */
             width: 100%; /* 文章列表靠左双行 */
-        }
-
-        .listLabels {
-            width: 100%; /* 文章列表靠左双行 */
-            display: flex; /* 文章列表靠左双行 */
-            justify-content: flex-end; /* 文章列表靠左双行 */
-            flex-direction: row-reverse; /* 文章列表靠左双行 */ 
+            padding-bottom: 5px; /* 底部留 5px 间隔 */
         }
 
         .SideNav-icon {
-            margin-right: 10px !important; /* 文章列表靠左双行 */ 
+            margin-right: 10px !important; /* 减少多余间距 */ 
             flex-shrink: 0; /* 文章列表靠左双行，禁止图标压缩导致间距消失 */
+        }
+
+        .listTitle {
+            white-space: unset; /* 解锁换行 */
+        }
+
+        /* 文章列表第二行 .LabelTime + .LabelName */
+        .listLabels {
+            width: 100%; /* 文章列表靠左双行 */
+            display: flex !important; /* 文章列表靠左双行 */
+            flex-wrap: wrap; /* 解锁 Label 自动换行 */
+        }
+
+        .LabelTime {
+            order: 1; /* 调整两种 Label 顺序 */
+        }
+        .LabelName {
+            order: 2; /* 调整两种 Label 顺序 */
         }
 
         /* 关闭标签和时间的圆角 */
@@ -643,9 +701,6 @@ document.addEventListener('DOMContentLoaded', function() {
         @media (max-width: 768px) {
             body {
                 padding: 8px !important;
-            }
-            #header {
-            height: 130px; /* header 居中 */
             }
             .tagTitle {
                 display: unset !important;
