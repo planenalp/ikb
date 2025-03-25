@@ -1,6 +1,23 @@
 {
-    "title":"Blog Title",
-    "subTitle":"Blog description",
-    "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
-    "GMEEK_VERSION":"last"
+    "title":"International.Klein.Blue",
+    "subTitle":"give you some color to see see",
+    "avatarUrl":"https://international.klein.blue/logo/favicon.svg",
+    "GMEEK_VERSION":"last",
+    "displayTitle":"International.Klein.Blue",
+    "homeUrl":"https://international.klein.blue",
+    "faviconUrl":"https://international.klein.blue/logo/favicon.svg",
+    "filingNum":"<a href='https://icp.gov.moe/?keyword=20259061' target='_blank'>萌ICP备20259061号</a>",
+    "singlePage":["link","about"],
+    "commentLabelColor":"#f5f5f5cc",
+    "yearColorList":["#002fa7cc","#007fffcc"],
+    "i18n":"EN",
+    "themeMode":"manual",
+    "dayTheme":"light",
+    "nightTheme":"dark",
+    "urlMode":"issue",
+    "script":"<script src='https://international.klein.blue/assets/fancybox.umd.js'></script><script src='https://international.klein.blue/assets/fancyboxLoad-IKB.js'></script><script src='https://international.klein.blue/assets/AriticleTocTopBot-IKB.js'></script>",
+    "allHead":"<script src='https://international.klein.blue/assets/Theme-IKB.js'></script>",
+    "indexScript":"<script src='https://international.klein.blue/assets/NumPagination.js'></script>",
+    "showPostSource":0,
+    "primerCSS":"<link href='https://international.klein.blue/assets/primer.css' rel='stylesheet' />"
 }
