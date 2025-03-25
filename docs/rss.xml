@@ -1,11 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://planenalp.github.io/IKB</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://planenalp.github.io/IKB</link></image><lastBuildDate>Tue, 25 Mar 2025 18:19:28 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Link</title><link>https://planenalp.github.io/IKB/post/Link.html</link><description>nothing。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Link.html</guid><pubDate>Tue, 25 Mar 2025 18:14:28 +0000</pubDate></item><item><title>About</title><link>https://planenalp.github.io/IKB/post/About.html</link><description>很喜欢蓝色，机缘巧合下搞到了这个域名，真好~
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://planenalp.github.io/IKB</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://planenalp.github.io/IKB</link></image><lastBuildDate>Tue, 25 Mar 2025 18:21:35 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Link</title><link>https://planenalp.github.io/IKB/post/Link.html</link><description>nothing。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Link.html</guid><pubDate>Tue, 25 Mar 2025 18:14:28 +0000</pubDate></item><item><title>About</title><link>https://planenalp.github.io/IKB/post/About.html</link><description>很喜欢蓝色，机缘巧合下搞到了这个域名，真好~
 
 每次打开主页看到配色都会心情舒畅
 
 嘿嘿
 
-Email: intl@klein.blue。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/About.html</guid><pubDate>Tue, 25 Mar 2025 18:07:41 +0000</pubDate></item><item><title>薛定谔的 NAS</title><link>https://planenalp.github.io/IKB/post/xue-ding-e-de-%20NAS.html</link><description>&lt;!-- ##{'timestamp':1680252720}## --&gt;
+Email: intl@klein.blue。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/About.html</guid><pubDate>Tue, 25 Mar 2025 18:07:41 +0000</pubDate></item><item><title>本来挺喜欢做 LOGO 的</title><link>https://planenalp.github.io/IKB/post/ben-lai-ting-xi-huan-zuo-%20LOGO%20-de.html</link><description>&lt;!-- ##{'timestamp':1680303840}## --&gt;
+
+# 现在更喜欢了
+
+最近两天不是一直在研究两个网站的 LOGO，想着把刚学到的经验分享出来水个教程，顺便整点活，于是想到用 iKun 作为题材感觉应该不错，就尝试弄了下
+
+但是做完之后竟然感觉有点帅气？这是什么情况！？？？
+
+## from
+![Image](https://github.com/user-attachments/assets/4e0d29a4-4be5-4108-8cbb-00f4e4d2d838)
+
+## to
+![Image](https://github.com/user-attachments/assets/59532781-aa4d-4c1b-8894-642fb4decc47)
+
+。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/ben-lai-ting-xi-huan-zuo-%20LOGO%20-de.html</guid><pubDate>Fri, 31 Mar 2023 23:04:00 +0000</pubDate></item><item><title>薛定谔的 NAS</title><link>https://planenalp.github.io/IKB/post/xue-ding-e-de-%20NAS.html</link><description>&lt;!-- ##{'timestamp':1680252720}## --&gt;
 
 # 突如其来的罢工
 自从组建好以来，一向兢兢业业运行良好的第一台 UNRAID NAS，昨晚睡觉前改 LOGO 的时候还正常用着，结果今天中午起床准备吃饭前玩了下电脑发现，我的映射盘怎么全部显示断连了？？？此时 NAS 后台登录网页也完全打不开
