@@ -1,11 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://planenalp.github.io/IKB</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://planenalp.github.io/IKB</link></image><lastBuildDate>Tue, 25 Mar 2025 18:26:45 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Link</title><link>https://planenalp.github.io/IKB/post/Link.html</link><description>nothing。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Link.html</guid><pubDate>Tue, 25 Mar 2025 18:14:28 +0000</pubDate></item><item><title>About</title><link>https://planenalp.github.io/IKB/post/About.html</link><description>很喜欢蓝色，机缘巧合下搞到了这个域名，真好~
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://planenalp.github.io/IKB</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://planenalp.github.io/IKB</link></image><lastBuildDate>Tue, 25 Mar 2025 18:29:02 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Link</title><link>https://planenalp.github.io/IKB/post/Link.html</link><description>nothing。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/Link.html</guid><pubDate>Tue, 25 Mar 2025 18:14:28 +0000</pubDate></item><item><title>About</title><link>https://planenalp.github.io/IKB/post/About.html</link><description>很喜欢蓝色，机缘巧合下搞到了这个域名，真好~
 
 每次打开主页看到配色都会心情舒畅
 
 嘿嘿
 
-Email: intl@klein.blue。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/About.html</guid><pubDate>Tue, 25 Mar 2025 18:07:41 +0000</pubDate></item><item><title>意外之财</title><link>https://planenalp.github.io/IKB/post/yi-wai-zhi-cai.html</link><description>&lt;!-- ##{'timestamp':1680449400}## --&gt;
+Email: intl@klein.blue。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/About.html</guid><pubDate>Tue, 25 Mar 2025 18:07:41 +0000</pubDate></item><item><title>新手做视频的迷茫</title><link>https://planenalp.github.io/IKB/post/xin-shou-zuo-shi-pin-de-mi-mang.html</link><description>&lt;!-- ##{'timestamp':1680969660}## --&gt;
+
+# 无头苍蝇
+
+这几天一直在准备把自己折腾的 PS + AI 做 logo 的办法做成视频教程，开始了才发现准备一期视频真不容易，要简单易懂同时详略得当，不能啰嗦，还要适当想一些梗防止过于硬核枯燥
+
+像第一期的 Hello World! 视频就明显没人看，因为里面除了瞎哔哔什么都没有，才50多秒的视频完播率连一半都没有，哈哈。</description><guid isPermaLink="true">https://planenalp.github.io/IKB/post/xin-shou-zuo-shi-pin-de-mi-mang.html</guid><pubDate>Sat, 08 Apr 2023 16:01:00 +0000</pubDate></item><item><title>意外之财</title><link>https://planenalp.github.io/IKB/post/yi-wai-zhi-cai.html</link><description>&lt;!-- ##{'timestamp':1680449400}## --&gt;
 
 # 第一天
 
