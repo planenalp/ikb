@@ -73,12 +73,10 @@ document.addEventListener("DOMContentLoaded", function() {
         :root {
             --color-toc-a-text: #24292f;
             --color-toc-bg: #ffffffcc;
-            --color-toc-border: rgba(31, 35, 40, 0.15);
             --color-toc-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             --color-toc-hover-bg: #002fa7;
             --color-toc-hover-border: rgba(31, 35, 40, 0.15);
-            --color-toc-h1: #007FFF;
-            --color-toc-icon-bg: #f6f8fab3;
+            --color-toc-h1: #007fff;
             --color-toc-icon-color: #656d76b3;
             --color-toc-icon-hover: #f5f5f5;
             --color-toc-highlightText: #f5f5f5;
@@ -90,12 +88,10 @@ document.addEventListener("DOMContentLoaded", function() {
         [data-color-mode=dark][data-dark-theme=dark]::selection {
             --color-toc-a-text: #c9d1d9;
             --color-toc-bg: #0d1117cc;
-            --color-toc-border: rgba(240, 246, 252, 0.1);
             --color-toc-box-shadow: 0 0 transparent;
             --color-toc-hover-bg: #002fa7;
             --color-toc-hover-border: #7d8590;
-            --color-toc-h1: #007FFF;
-            --color-toc-icon-bg: #21262db3;
+            --color-toc-h1: #007fff;
             --color-toc-icon-color: #7d8590b3;
             --color-toc-icon-hover: #f5f5f5;
             --color-toc-highlightText: #f5f5f5;
@@ -111,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function() {
             max-height: 70vh;
             padding: 10px;
             overflow-y: auto;
-            border: 1px solid var(--color-toc-border);
             border-radius: 6px;
             background-color: var(--color-toc-bg);
             box-shadow: var(--color-toc-box-shadow);
@@ -179,11 +174,10 @@ document.addEventListener("DOMContentLoaded", function() {
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid var(--color-toc-border);
+            border: none;
             border-radius: 50%;
-            background-color: var(--color-toc-icon-bg);
+            background-color: transparent;
             color: var(--color-toc-icon-color);
-            box-shadow: var(--color-toc-box-shadow);
             transition: transform 0.1s ease, opacity 0.1s ease;
             cursor: pointer;
             /* 禁用 iOS 长按弹出菜单 */
@@ -205,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .toc-icon:hover {
                 background-color: var(--color-toc-hover-bg);
                 color: var(--color-toc-icon-hover);
-                border: 1px solid var(--color-toc-hover-border);
+                box-shadow: var(--color-toc-box-shadow);
                 transition: 0.1s ease;
             }
         }
@@ -214,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .toc-icon:active {
             background-color: var(--color-toc-hover-bg);
             color: var(--color-toc-icon-hover);
-            border: 1px solid var(--color-toc-hover-border);
+            box-shadow: var(--color-toc-box-shadow);
             transform: scale(0.9);
             transition: 0.1s ease;
         }
@@ -223,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .toc-icon.active {
             background-color: var(--color-toc-hover-bg);
             color: var(--color-toc-icon-hover);
-            border: 1px solid var(--color-toc-hover-border);
+            box-shadow: var(--color-toc-box-shadow);
             transform: rotate(90deg);
             transition: 0.1s ease;
         }
@@ -270,11 +264,10 @@ document.addEventListener("DOMContentLoaded", function() {
             justify-content: center;
             padding: 0;
             margin: 0;
-            border: 1px solid var(--color-toc-border);
+            border: none;
             border-radius: 50%;
-            background-color: var(--color-toc-icon-bg);
+            background-color: transparent;
             color: var(--color-toc-icon-color);
-            box-shadow: var(--color-toc-box-shadow);
             opacity: 0;
             transition: transform 0.1s ease, opacity 0.1s ease;
             font-size: 24px;
@@ -315,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .back-to-top:hover, .back-to-bot:hover {
                 background-color: var(--color-toc-hover-bg);
                 color: var(--color-toc-icon-hover);
-                border: 1px solid var(--color-toc-hover-border);
+                box-shadow: var(--color-toc-box-shadow);
                 transition: 0.1s ease;
             }
         }
@@ -324,7 +317,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .back-to-top:active, .back-to-bot:active {
             background-color: var(--color-toc-hover-bg);
             color: var(--color-toc-icon-hover);
-            border: 1px solid var(--color-toc-hover-border);
+            box-shadow: var(--color-toc-box-shadow);
             transform: scale(0.9);
             transition: 0.1s ease;
         }
