@@ -286,9 +286,10 @@ document.addEventListener('DOMContentLoaded', function() {
         background-size: cover;
         transition: background-image 0.15s linear;
     }
-    
+
+    /* 解决按压边框闪烁 */
     .btn, .d-flex {
-        outline: none !important; /* 解决按压边框闪烁 */
+        outline: none !important;
     }
     
     `;
@@ -437,6 +438,7 @@ document.addEventListener('DOMContentLoaded', function() {
         /* 按钮按压 */
         .btn:active {
             background-color: var(--btn-hover-bgColor);
+            transform: scale(0.9);
             transition: 0.1s ease;
             .octicon {
                 color: var(--icon-hover-color);
@@ -634,6 +636,7 @@ document.addEventListener('DOMContentLoaded', function() {
         /* 按钮按压 */
         .btn:active {
             background-color: var(--btn-hover-bgColor);
+            transform: scale(0.9);
             transition: 0.1s ease;
             .octicon {
                 color: var(--icon-hover-color);
@@ -647,8 +650,8 @@ document.addEventListener('DOMContentLoaded', function() {
         #themeSwitch {
             color: var(--themeSwitch-color);
         }
-
-        /* 评论按钮悬停 */
+        
+         /* 评论按钮悬停 */
         @media (any-hover: hover) {
             #cmButton:hover {
                 background-color: var(--btn-hover-bgColor);
@@ -660,6 +663,8 @@ document.addEventListener('DOMContentLoaded', function() {
         #cmButton:active {
             background-color: var(--btn-hover-bgColor);
             color: var(--text-hover-color);
+            transform: scale(0.98);
+            transition: 0.1s ease;
         }
         
         /* 重新定义 max-width: 768px 参数下的值，原为 600px */
@@ -773,6 +778,7 @@ document.addEventListener('DOMContentLoaded', function() {
         /* 按钮按压 */
         .btn:active {
             background-color: var(--btn-hover-bgColor);
+            transform: scale(0.9);
             transition: 0.1s ease;
             .octicon {
                 color: var(--icon-hover-color);
