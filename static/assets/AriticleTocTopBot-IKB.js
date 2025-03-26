@@ -80,8 +80,8 @@ document.addEventListener("DOMContentLoaded", function() {
             --color-toc-h1: #007FFF;
             --color-toc-icon-bg: #f6f8fab3;
             --color-toc-icon-color: #656d76b3;
-            --color-toc-icon-hover: #656d76;
-            --color-toc-highlightText: #ffffff;
+            --color-toc-icon-hover: #f5f5f5;
+            --color-toc-highlightText: #f5f5f5;
         }
         /* dark 主题颜色 */
         [data-color-mode=light][data-light-theme=dark],
@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", function() {
             --color-toc-h1: #007FFF;
             --color-toc-icon-bg: #21262db3;
             --color-toc-icon-color: #7d8590b3;
-            --color-toc-icon-hover: #7d8590;
-            --color-toc-highlightText: #ffffff;
+            --color-toc-icon-hover: #f5f5f5;
+            --color-toc-highlightText: #f5f5f5;
         }
         
         /* 弹出菜单主体 */
