@@ -648,6 +648,11 @@ document.addEventListener('DOMContentLoaded', function() {
             color: var(--themeSwitch-color);
         }
 
+        /* 评论按钮悬停字色 */
+        #cmButton: hover {
+            color: var(--text-hover-color);
+        }
+
         /* 重新定义 max-width: 768px 参数下的值，原为 600px */
         @media (max-width: 768px) {
             body {
