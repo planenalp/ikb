@@ -3,8 +3,7 @@
 # 前言
 
 原视频教程出处
-Live Blogger - 《How To Customize BG Image In Blogger Contempo Theme | Theme Editor》
-[https://www.youtube.com/watch?v=zMB0XeMcRZg&ab_channel=LiveBlogger](https://www.blogger.com/blog/post/edit/8151877248081093597/8992707372004594223#)
+[Live Blogger - 《How To Customize BG Image In Blogger Contempo Theme | Theme Editor》](https://www.youtube.com/watch?v=zMB0XeMcRZg&ab_channel=LiveBlogger)
 
 因为 Blogger 默认顶栏只能设置添加图片，不能单独自定义颜色，klein.blue 的顶栏的风格只需要颜色不需要图像，之前就是曲线救国做了一张蓝色纯色图上传上去，正常来说没什么问题，但是国内直连所有图片都没法正确加载导致顶栏变成了当前主题默认的深灰色，所以就想研究怎么通过修改 CSS 代码之类将这个默认的深灰色像其余模块那样可以自定义为 #002FA7，问题很小众找了半天终于在 YouTube 搜到1个视频教程
 这样即使加载不了图片也还能显示出网站的背景颜色了
