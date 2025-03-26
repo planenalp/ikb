@@ -649,7 +649,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         /* 评论按钮悬停字色 */
-        #cmButton: hover {
+        #cmButton:hover {
             color: var(--text-hover-color);
         }
 
