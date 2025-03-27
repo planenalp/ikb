@@ -13,4 +13,4 @@
 ![Image](https://github.com/user-attachments/assets/59532781-aa4d-4c1b-8894-642fb4decc47)
 
 ## test
-`Gmeek-html<class="data data-fancybox="gallery" img src="https://github.com/user-attachments/assets/4e0d29a4-4be5-4108-8cbb-00f4e4d2d838">`
+`Gmeek-html<img data-fancybox="gallery" img src="https://github.com/user-attachments/assets/4e0d29a4-4be5-4108-8cbb-00f4e4d2d838">`
