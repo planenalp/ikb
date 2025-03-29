@@ -86,4 +86,4 @@ Blogger - Theme - CUSTOMIZE旁的小三角 - Backup - DOWNLOAD
 同样位置 Restore 按需恢复备份
 
 # 最终效果
-![Image](https://github.com/user-attachments/assets/3f8ac211-a663-40cf-9533-f69969d2e4be)
+![Image](https://github.com/user-attachments/assets/fe77503c-c6c2-43c9-9198-8d0e36804d64)
