@@ -94,27 +94,27 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 默认自带保留查询字符串（Preserve query string）功能</p>
 <p>Rules - Page Rules - Create Page Rule</p>
 <p>URL (required): <code class="notranslate">a.com/*</code><br>
-Then the settings are: Forwarding URL - Select status code (required): 302 Temporary Redirect<br>
+Then the settings are: <code class="notranslate">Forwarding URL</code> - Select status code (required): <code class="notranslate">302 Temporary Redirect</code><br>
 Enter destination URL (required): <code class="notranslate">https://b.com/$1</code></p>
 <p>Save Page Rule</p>
 <p>这样 <code class="notranslate">a.com/任意内容</code> 都会被重定向去 <code class="notranslate">https://b.com/任意内容</code></p>
 <h1>方法2：Redirect Rules</h1>
 <p>新出的方式，规则可以更复杂功能更多，免费账号最多支持10条，搭配3条传统的 Pages Rules 总共可以13条，良心<br>
-// 所有状态下被重定向指向的域名必须加上 http:// 或 https://（推荐）</p>
+所有状态下被重定向指向的域名必须加上 http:// 或 https://（推荐）</p>
 <h2>Wildcard pattern（推荐）</h2>
 <p>想用带通配符功能的 wildcard 如 <code class="notranslate">https://a.com/*</code> 重定向去 <code class="notranslate">https://b.com/${1}</code>，就只能用1对1的单个域名重定向的 Wildcard pattern<br>
 此时输入域名规则必须严格一致，如设定了 <code class="notranslate">http://a.com/*</code>，浏览器输入域名时就必须是带 http:// 开头才能生效<br>
 但是若设定了 <code class="notranslate">https://a.com/*</code>，则浏览器输入 http:// 或  https:// 都能生效<br>
 此功能包含了 <code class="notranslate">a.com</code> 重定向到 <code class="notranslate">https://b.com/</code></p>
-<p>Rules - Create rule - Redirect Rule<br>
-Rule name (required): <code class="notranslate">a.com to b.com</code>（随便一个易记的名）</p>
-<p>If incoming requests match…: Wildcard pattern</p>
+<p>Rules - Create rule - Redirect Rule</p>
+<p>Rule name (required): <code class="notranslate">a.com to b.com</code>（随便一个易记的名）</p>
+<p>If incoming requests match…: <code class="notranslate">Wildcard pattern</code></p>
 <p>Request URL: <code class="notranslate">https://a.com/*</code></p>
 <p>Then...<br>
-Target URL: <code class="notranslate">https://b.com/${1}</code> - Status code: 302<br>
-Preserve query string: 勾选（重定向时保留保留查询字符串，也就是链接内包含 ? 后的完整URL）</p>
+Target URL: <code class="notranslate">https://b.com/${1}</code> - Status code: <code class="notranslate">302</code><br>
+<code class="notranslate">Preserve query string</code>: 勾选（重定向时保留保留查询字符串，也就是链接内包含 ? 后的完整URL）</p>
 <p>Place at<br>
-Select order: First（按需选择顺序）</p>
+Select order: <code class="notranslate">First</code>（按需选择顺序）</p>
 <p>Deploy</p>
 <h2>Custom filter expression</h2>
 <p>适用于仅重定向域名本身，无视域名前后的额外内容，支持通过 Or 实现多个三级域名转到指定域名上<br>
@@ -122,25 +122,31 @@ Select order: First（按需选择顺序）</p>
 或 <code class="notranslate">1.a.com</code> 和 <code class="notranslate">2.a.com</code> 都重定向去 <code class="notranslate">b.com</code></p>
 <p>Rules - Create rule - Redirect Rule<br>
 Rule name (required): <code class="notranslate">a.com to b.com</code>（随便一个易记的名）</p>
-<p>If incoming requests match…: Custom filter expression</p>
-<p>Field: Hostname - Operator: equals - Value: <code class="notranslate">a.com</code><br>
+<p>If incoming requests match…: <code class="notranslate">Custom filter expression</code></p>
+<p>Field: <code class="notranslate">Hostname </code>- Operator: <code class="notranslate">equals</code> - Value: <code class="notranslate">a.com</code><br>
 Or<br>
-Field: Hostname - Operator: equals - Value: <code class="notranslate">www.a.com</code></p>
+Field: <code class="notranslate">Hostname</code> - Operator: <code class="notranslate">equals</code> - Value: <code class="notranslate">www.a.com</code></p>
 <p>Then...<br>
 URL redirect<br>
-Type: Static - URL: <code class="notranslate">https://b.com/</code> - Status code: 302<br>
-Preserve query string: 勾选（重定向时保留链接内包含 ? 后的完整URL）</p>
+Type: <code class="notranslate">Static</code> - URL: <code class="notranslate">https://b.com/</code> - Status code: <code class="notranslate">302</code><br>
+<code class="notranslate">Preserve query string</code>: 勾选（重定向时保留链接内包含 ? 后的完整URL）</p>
 <p>Place at<br>
-Select order: First（按需选择顺序）</p>
+Select order: <code class="notranslate">First</code>（按需选择顺序）</p>
 <p>Deploy</p>
 <h1>小知识</h1>
 <p>有时候设置完可能需要等一段时间才能生效，一般是0-60分钟以内，因此不要以为设置错了心急频繁改</p>
+<ul>
+<li>
 <p>301 和 302 区别（教程选了 302）<br>
 用 301：当你确定旧 URL 不再使用，允许浏览器缓存，且希望将流量和 SEO 价值永久转移到新地址。<br>
 用 302：当你只是暂时调整流量，不需浏览器缓存，或者不确定未来是否恢复旧 URL。</p>
+</li>
+<li>
 <p>Preserve Query String 和 Dynamic 区别（教程选了 Preserve Query String + Static）<br>
 Preserve Query String：就像一个开关，打开就保留查询字符串，关闭就不保留，功能单一，是 Dynamic 的一个子集功能。<br>
-Dynamic：像一个工具箱，你可以用它拼装出任何你想要的目标 URL，能做的事情远超 Preserve Query String，它不仅能保留查询字符串，还能做更多自定义操作。</p></div>
+Dynamic：像一个工具箱，你可以用它拼装出任何你想要的目标 URL，能做的事情远超 Preserve Query String，它不仅能保留查询字符串，还能做更多自定义操作。</p>
+</li>
+</ul></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">comments</button>

@@ -27,7 +27,7 @@
 Rules - Page Rules - Create Page Rule
 
 URL (required): `a.com/*`
-Then the settings are: Forwarding URL - Select status code (required): 302 Temporary Redirect
+Then the settings are: `Forwarding URL` - Select status code (required): `302 Temporary Redirect`
 Enter destination URL (required): `https://b.com/$1`
 
 Save Page Rule
@@ -38,7 +38,7 @@ Save Page Rule
 # 方法2：Redirect Rules
 
 新出的方式，规则可以更复杂功能更多，免费账号最多支持10条，搭配3条传统的 Pages Rules 总共可以13条，良心
-// 所有状态下被重定向指向的域名必须加上 http:// 或 https://（推荐）
+所有状态下被重定向指向的域名必须加上 http:// 或 https://（推荐）
 
 ## Wildcard pattern（推荐）
 想用带通配符功能的 wildcard 如 `https://a.com/*` 重定向去 `https://b.com/${1}`，就只能用1对1的单个域名重定向的 Wildcard pattern
@@ -47,18 +47,19 @@ Save Page Rule
 此功能包含了 `a.com` 重定向到 `https://b.com/`
 
 Rules - Create rule - Redirect Rule
+
 Rule name (required): `a.com to b.com`（随便一个易记的名）
 
-If incoming requests match…: Wildcard pattern
+If incoming requests match…: `Wildcard pattern`
 
 Request URL: `https://a.com/*`
 
 Then...
-Target URL: `https://b.com/${1}` - Status code: 302
-Preserve query string: 勾选（重定向时保留保留查询字符串，也就是链接内包含 ? 后的完整URL）
+Target URL: `https://b.com/${1}` - Status code: `302`
+`Preserve query string`: 勾选（重定向时保留保留查询字符串，也就是链接内包含 ? 后的完整URL）
 
 Place at
-Select order: First（按需选择顺序）
+Select order: `First`（按需选择顺序）
 
 Deploy
 
@@ -72,30 +73,30 @@ Deploy
 Rules - Create rule - Redirect Rule
 Rule name (required): `a.com to b.com`（随便一个易记的名）
 
-If incoming requests match…: Custom filter expression
+If incoming requests match…: `Custom filter expression`
 
-Field: Hostname - Operator: equals - Value: `a.com`
+Field: `Hostname `- Operator: `equals` - Value: `a.com`
 Or
-Field: Hostname - Operator: equals - Value: `www.a.com`
+Field: `Hostname` - Operator: `equals` - Value: `www.a.com`
 
 Then...
 URL redirect
-Type: Static - URL: `https://b.com/` - Status code: 302
-Preserve query string: 勾选（重定向时保留链接内包含 ? 后的完整URL）
+Type: `Static` - URL: `https://b.com/` - Status code: `302`
+`Preserve query string`: 勾选（重定向时保留链接内包含 ? 后的完整URL）
 
 Place at
-Select order: First（按需选择顺序）
+Select order: `First`（按需选择顺序）
 
 Deploy
 
 # 小知识
 有时候设置完可能需要等一段时间才能生效，一般是0-60分钟以内，因此不要以为设置错了心急频繁改
 
-301 和 302 区别（教程选了 302）
+ - 301 和 302 区别（教程选了 302）
 用 301：当你确定旧 URL 不再使用，允许浏览器缓存，且希望将流量和 SEO 价值永久转移到新地址。
 用 302：当你只是暂时调整流量，不需浏览器缓存，或者不确定未来是否恢复旧 URL。
 
-Preserve Query String 和 Dynamic 区别（教程选了 Preserve Query String + Static）
+ - Preserve Query String 和 Dynamic 区别（教程选了 Preserve Query String + Static）
 Preserve Query String：就像一个开关，打开就保留查询字符串，关闭就不保留，功能单一，是 Dynamic 的一个子集功能。
 Dynamic：像一个工具箱，你可以用它拼装出任何你想要的目标 URL，能做的事情远超 Preserve Query String，它不仅能保留查询字符串，还能做更多自定义操作。
 
