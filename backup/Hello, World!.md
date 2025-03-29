@@ -21,11 +21,11 @@
 用来用去感觉带文字的 ID 图做头像的话太复杂了，不过意外发现作为头图很合适
 最终决定全部头像统一采用 Favicon 的图，切圆角后好像有点 APP 图标的意思了哈哈，自我感觉良好中
 
-![Image](https://github.com/user-attachments/assets/d18cce9b-b169-4635-8b0b-2f51bb6a3425)
-Banner
-
-![Image](https://github.com/user-attachments/assets/15b89e65-3cfc-40f9-96a5-b3f497bd8f0e)
+![Image](https://github.com/user-attachments/assets/97f6ab70-31e1-49db-983d-ab6b1c21938e)
 Favicon + Avatar
+
+![Image](https://github.com/user-attachments/assets/8359236b-06be-4f48-ba71-021fe2f83710)
+Banner
 
 还有想破头想了很久不能和别人冲突的 ID，最终只能确定一个相对有点绕同时也比较有意思的 Hex002FA7，虽然有 instagram 和 tumblr 里面被抢注了，但是问题不大，我也不是非要在这两个地方发表什么东西，真要的话最多在两个上面改成 -Hex002FA7- 就好
 
