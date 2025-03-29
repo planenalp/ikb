@@ -1,3 +1,5 @@
+<!-- ##{"timestamp":1741005660}## -->
+
 # 1. Cloudflare 首次添加 
 在 Cloudflare 首次添加两个 CNAME 时，Proxy status 必须关闭，否则 Blogspot 内无法确认，添加成功后可重新开启
 
@@ -42,3 +44,4 @@ https://www.google.com/webmasters/verification/home
 
 解决办法源自：
 https://support.google.com/blogger/thread/120124946/how-do-i-reactivate-my-custom-domain-in-blogger?hl=en
+
